@@ -1,0 +1,46 @@
+name: LoginSystem
+main: LoginSystem\System
+api: 1.12.0
+version: 1.0.0
+author: TnT_Server & BCTW PocketMine Plugin™
+description: A login plugin make by TnT_Server
+
+commands:
+  unregister:
+    usage: /unregister
+    description: Change password
+    permission: loginsystem.command.unregister
+    aliases: ["ur"]
+  changepass:
+    usage: /changepass <old> <new> <new>
+    description: Change your password
+    permission: loginsystem.command.changepass
+    aliases: ["mima", "changepw"]
+  chgemail:
+    usage: /chgemail <email>
+    description: Set your email
+    permission: loginsystem.command.chgemail
+    aliases: ["email"]
+  logout:
+    usage: /logout
+    description: Log Out
+    permission: loginsystem.command.logout
+  authme:
+    usage: /log help
+    description: LoginSystem command
+    permission: loginsystem.command.log
+    aliases: ["ah"]
+
+permissions:
+  loginsystem.command.unregister:
+    default: true
+  loginsystem.command.changepass:
+    default: true
+  loginsystem.command.chgemail:
+    default: true
+  loginsystem.command.logout:
+    default: true
+  loginsystem.command.authme:
+    default: op
+  loginsystem.login.bypass:
+    default: false
