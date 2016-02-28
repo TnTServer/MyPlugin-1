@@ -1,0 +1,35 @@
+### LoginSystem Configuration File ###
+
+# Sessions
+sessions:
+  # Enable session
+  enabled: true
+  # Session time (minutes)
+  # After player logout, player can login if session isn't expired
+  session-login-available-minutes: 5
+  
+# Email
+email:
+  # Add email into your server?
+  remind-players-add-email: true
+ 
+# How many second to kick the player when they didn't move？
+login-timeout: 30
+
+# Mini Password Length
+min-password-length: 6
+
+# Max Password Length
+max-password-length: 12
+
+# Will the player alway spawn when join again?
+force-spawn: true
+
+# Password System
+# Allow player type the password how many time
+tries-allowed-to-enter-password: 3
+# How many times to ban player when they type too many wrong password
+time-unban-after-tries-ban-minutes: 2
+
+# Vanish the Non-Login Player
+vanish-nonloggedin-players: true
